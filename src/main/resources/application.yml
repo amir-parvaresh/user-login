@@ -1,0 +1,19 @@
+server:
+  port: 8888
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    password: Mcse2003
+    url: jdbc:postgresql://192.168.1.104:5432/student
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
